@@ -46,3 +46,5 @@ weight <- as.double(c(150, 165, 145))
 sex <- as.factor(c("Female", "Male", "Female"))
 df <- data.frame(name, age, weight, sex)
 
+
+#PART 4----
