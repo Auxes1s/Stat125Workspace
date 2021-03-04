@@ -47,13 +47,13 @@ sex <- as.factor(c("Female", "Male", "Female"))
 df <- data.frame(name, age, weight, sex)
 
 
-#PART 4----
+#PART 4 ----
 get_square_root <- function(a, delta) {
   x1 <- sample.int(20, 1)
   xn <- (0.5)*((x1) + (a / x1))
   while(abs(xn - x1) > delta){
     x1 <- xn
     xn <- (0.5)*((x1) + (a / x1))
-    print(xn)
   }
+  return(xn)
 }
