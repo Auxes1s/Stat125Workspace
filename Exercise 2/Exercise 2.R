@@ -9,4 +9,18 @@ read_fwf(file = here("Exercise 2/Clinical Data.txt"),
                                   sbp = c(24, 26),
                                   dbp = c(27, 29),
                                   vitamin = 30,
-                                  preg = 31))
+                                  preg = 31),
+          col_types = cols(ID = col_character(),
+                           Gender = col_character(),
+                           DoB = col_date(format = "%m%d%y"),
+                           DoV = col_date(format = "%m%d%y"),
+                           pdx = col_character(),
+                           sdx = col_character(),
+                           hr = col_number(),
+                           sbp = col_number(),
+                           dbp = col_number(),
+                           vitamin = col_character(),
+                           preg = col_character())
+         )
+
+
