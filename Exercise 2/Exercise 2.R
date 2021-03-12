@@ -20,7 +20,8 @@ read_fwf(file = here("Exercise 2/Clinical Data.txt"),
                            sbp = col_number(),
                            dbp = col_number(),
                            vitamin = col_character(),
-                           preg = col_character())
+                           preg = col_character()),
+         na = "."
          )
 
 
