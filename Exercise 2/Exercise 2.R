@@ -1,0 +1,12 @@
+read_fwf(file = here("Exercise 2/Clinical Data.txt"),
+         col_positions = fwf_cols(ID = c(1, 3),
+                                  Gender = 4,
+                                  DoB = c(5, 10),
+                                  DoV = c(11, 16),
+                                  pdx = c(17, 18),
+                                  sdx = c(19, 20),
+                                  hr = c(21, 23),
+                                  sbp = c(24, 26),
+                                  dbp = c(27, 29),
+                                  vitamin = 30,
+                                  preg = 31))
