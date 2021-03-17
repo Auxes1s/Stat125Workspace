@@ -4,7 +4,7 @@ stock.prices <- c(23,27,23,21,34)
 #1.2
 names(stock.prices) <- c('Mon', 'Tue', 'Wed', 'Thur', 'Fri')
 #1.3
-over.23 <- c(F,T,F,F,T)
+over.23 <- stock.prices > 23
 #1.4
 stock.prices[over.23]
 
@@ -27,6 +27,7 @@ sex.factor <- factor(sex,
 
 #2.4
 female.smoker <- respo[sex.factor == 'Female' & yes.no == 'Yes']
+
 #PART 3 ----
 #3.1
 X <- c(29, 21, 31); Y <- c(13, 6, 41)
@@ -49,7 +50,7 @@ df <- data.frame(name, age, weight, sex)
 
 #PART 4 ----
 get_square_root <- function(a, delta) {
-  x1 <- sample.int(20, 1)
+  x1 <- sample.int(100, 1)
   xn <- (0.5)*((x1) + (a / x1))
   while(abs(xn - x1) > delta){
     x1 <- xn
