@@ -44,4 +44,4 @@ levels(df$preg) <- c("Yes", "No")
 # df['preg'] <- factor(df$preg, levels = c("1", "0"), labels = c("Yes", "No"))
 
 # #Writing to an RDS file
-write_rds(df, "Exercise#2_Output.rds")
+write_rds(df2, "Exercise#2_Output.rds")
