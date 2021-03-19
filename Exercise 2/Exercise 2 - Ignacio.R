@@ -1,8 +1,8 @@
-#Requisites
+#Requirements
 library(readr)
 library(here)
 
-#Reading the .txt file
+#Reading the .txt file and changing the col_types
 df <- read_fwf(file = here("Exercise 2/Clinical Data.txt"),
          col_positions = fwf_cols(ID = c(1, 3),
                                   Gender = 4,
@@ -29,7 +29,7 @@ df <- read_fwf(file = here("Exercise 2/Clinical Data.txt"),
          na = "."
          )
 
-# #Formatting the table
+#Replacing the levels with another vector of levels.
 levels(df$pdx) <- c("Cold", "Flu", "Routine Physical", "Ear Ache", "Abdominal Pain", "Heart Problem", "Lung Disorder")
 levels(df$sdx) <- c("Cold", "Flu", "Routine Physical", "Ear Ache", "Abdominal Pain", "Heart Problem", "Lung Disorder")
 levels(df$vitamin) <- c("Yes", "No")
